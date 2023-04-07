@@ -26,8 +26,11 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
+// Assign string value of 'Dane' to variable 'name'. 
+// Run if/else conditional script against 'name' variable to determine console log return. 
+// If the variable is exactly equal to value 'Mary', message will display as 'Hi, Mary!'
+// However, since the variable value is not 'Mary', the console log 
+// message will display as the else option 'How do you do?'.
 // 
 //
 
@@ -45,10 +48,19 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// Use result of the conditional statements to assign value of variable 'secret'.
+// Assign value of 123 to variable 'code'.
+// First conditional states that when 'code' value is exactly equal to 123 then:
+// 1) the value of 'secret' will be string 'super', &
+// 2) the value of the 'code' variable will be multiplied by 2.
+// Second conditional statement states that if value of 'code' is greater than 250,
+// then value of 'secret' will change to 'duper'.
+// Since the value of 'code' is 123, which is exact match for first script, 
+// then it will run that script, with following results:
+// 1) value of 'secret' will be 'super', &
+// 2) value of 'code' will double, &
+// 3) second script will not run because 'code' value is <250 (123*2=246), &
+// 4) console log display message will be 'super'
 
 //CODE
 /*
