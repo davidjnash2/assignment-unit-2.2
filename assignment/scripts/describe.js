@@ -82,9 +82,18 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
+// Assign values of 'true' to variable 'isStudent', '34' to variable 'age', and '55407' to variable 'zip'.
+// Per conditionals, there are these 4 possible return messages, with these criteria:
+// 1) 'You're a student on the West Coast!' will be displayed in console log if 'isStudent' value is 'true' AND
+//    the 'zip' value is over 80000. 
+//    -These conditions are not met because 'zip' value is under 80000, and both conditions must be met due to '&&'.-
+// 2) 'What are your hobbies?' will disply if either 'isStudent' value equals 'false' OR 'age' value is less than 30. 
+//    -These conditions are not met because neither of the OR values are matched; 'isStudent' value is 'true' and 'age' is over 30.-
+// 3) 'Welcome to Prime!' will display if 'isStudent' value is 'true'.
+//    -These conditions are met, because 'isStudent' value equals 'true'.
+// 4) 'How about the weather?' is default message, which will display if none of the conditions for first 3 options are met.
+// So, message 'Welcome to Prime!' will display in console log since conditions of first two statements were not met, 
+// but were met for third statement. Default statement will not run since a prior statement sastisfied conditions.
 //
 
 //CODE
@@ -142,10 +151,14 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+
+// FIX - String values for the colors are transposed. colorOne should be 'blue' and colorTwo should be 'red'.
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+// FIX - As currently written, will only change value for colorOne. To excecute as described, 
+// will need a second line for colorTwo under the colorOne line, which should be: colorTwo = 'purple';
 if (mix === true) {
   colorOne = 'purple';
 }
@@ -159,6 +172,8 @@ if (mix === true) {
 let temp = 40;
 const time = 4;
 
+// FIX - Descrition calls for both temp AND time values to be true, but '||' is an OR operator; 
+// will need '&&' to check that both values are true. Should correctly read ( temp > 39 && time >= 4 )
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -172,6 +187,10 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
+// FIX - As written, this will return the message 'no entry', because the 'equal to' portion of the current '<=' comparison 
+// between 'minAge' and 'age' will match their identical '21' values, thereby meeting conditions for first statement.
+// To operate as described, that comparison should omit the '=' to read (minAge < age), so that terms of 'if' statement are not met,
+// so script will run desired 'else' message.
 if(minAge <= age) {
   console.log('no entry');
 } else {
