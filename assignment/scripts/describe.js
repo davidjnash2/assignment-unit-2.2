@@ -187,10 +187,16 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
-// FIX - As written, this will return the message 'no entry', because the 'equal to' portion of the current '<=' comparison 
-// between 'minAge' and 'age' will match their identical '21' values, thereby meeting conditions for first statement.
-// To operate as described, that comparison should omit the '=' to read (minAge < age), so that terms of 'if' statement are not met,
-// so script will run desired 'else' message.
+// FIX - As written, this will return the message 'no entry', because the 'equal to' portion 
+// of the current '<=' comparison between 'minAge' and 'age' will match their identical '21' 
+// values, thereby meeting conditions for first statement.
+// To operate as described, that comparison should omit the '=' to read (minAge < age), so 
+// that terms of 'if'  statement are not met, so script will run desired 'else' message.
+
+// FIX, TAKE 2 - Ok, I would change it so that it is the cleanest, simplest, least convoluted 
+// for me to read. That would mean making the if statment be (age >= minAge), and changing that 
+// result to 'enter', and then making the else statment be 'no enter.'
+
 if(minAge <= age) {
   console.log('no entry');
 } else {
